@@ -1,0 +1,28 @@
+.font-style{
+    font-family: cursive;
+    color: blueviolet;
+    font-weight: bold;
+}
+.demo-product{
+    background-color: rgb(235, 234, 232);
+}
+.drone-image{
+    height: 250px;
+}
+.image-size{
+    margin-top: 1rem;
+    height: 30vh;
+}
+.text-slice{
+    white-space: nowrap; 
+    width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+
+@media only screen and (max-width: 600px) {
+   .text-slice{
+       width: 200px;
+   }
+  }

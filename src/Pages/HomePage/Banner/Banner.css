@@ -1,0 +1,18 @@
+.banner-bg{
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:initial;
+}
+.info{
+    margin-top: 11rem;
+    margin-left: 10rem ;
+}
+
+@media only screen and (max-width: 600px) {
+   .info{
+       margin-top: 4rem;
+       
+   }
+  }

@@ -1,0 +1,72 @@
+[
+    {
+        "name":"DJI Mavic Air 2",
+        "price": 749,
+        "description": " Ultralight and Foldable Drone Quadcopter, 3-Axis Gimbal with 4K Camera, 12MP Photo, 31 Mins Flight Time, OcuSync 2.0 10km HD Video Transmission, QuickShots Gray",
+        "img": "https://149355317.v2.pressablecdn.com/wp-content/uploads/2020/05/DJI-Mavic-Air-2-Top-Camera-Drones.jpg",
+        "time": "31 Min" 
+    },
+    {
+        "name":"Holy Stone HS270 Drone",
+        "price": 559,
+        "description": " Holy Stone HS270 GPS 2.7K Drone with FHD FPV Camera Live Video for Adults, Portable Selfie Quadcopter with 2 Batteries for Beginners with Auto Return Home, Custom Flight Path, Follow Me, Auto Hover",
+        "img": "https://149355317.v2.pressablecdn.com/wp-content/uploads/2021/03/Holy-Stone-HS270-Top-Camera-Drones.jpg",
+        "time": "18 Min"  
+    },
+    {
+        "name":"U49WF FPV Camera Drone",
+        "price": 449,
+        "description": " Force1 U49WF FPV Drone with Camera for Adults - VR Headset Compatible WiFi Quadcopter RTF Remote Control Flying Drone with 720p HD Drone Camera, Altitude Hold, Headless Mode, and 2 Drone Batteries",
+        "img": "https://149355317.v2.pressablecdn.com/wp-content/uploads/2019/10/Force1-U49WF-Drone-Top-Camera-Drones.jpg",
+        "time": "15 Min"  
+    },
+    {
+        "name":"Skydio 2",
+        "price": 949,
+        "description": "Designed to be your personal film crew in a case, Skydio 2 captures stunning 4K60 HDR content, follows subjects, and avoids obstacles to create previously impossible shots. Launch, fly, land, and export all in the Skydio 2 app.",
+        "img": "https://149355317.v2.pressablecdn.com/wp-content/uploads/2020/04/TEST-Skydio-2-Top-Camera-Drones-2.jpg",
+        "time": "23 Min"  
+    },
+    {
+        "name":"DJI FPV Drone",
+        "price": 1299,
+        "description": "DJI FPV Combo - First-Person View Drone UAV Quadcopter with 4K Camera, S Flight Mode, Super-Wide 150° FOV, HD Low-Latency Transmission, Emergency Brake and Hover, Gray",
+        "img": "https://149355317.v2.pressablecdn.com/wp-content/uploads/2021/03/DJI-FPV-Drone-Top-Camera-Drones.jpg",
+        "time": "20 Min"  
+    },
+    {
+        "name":"Autel EVO II Series",
+        "price": 1399,
+        "description": " Autel Robotics EVO II 8K Drone Camera, Portable Folding Aircraft with Remote Controller, Captures Incredibly Smooth 8K Ultra HD Video and 48MP Photos",
+        "img": "https://149355317.v2.pressablecdn.com/wp-content/uploads/2020/06/Autel-EVO-2-8K-Drone-Top-Camera-Drones.jpg",
+        "time": "40 Min"  
+    },
+    {
+        "name":"DJI Mavic 2 Zoom",
+        "price": 1449,
+        "description": " DJI Mavic 2 Zoom - Drone Quadcopter UAV with Optical Zoom Camera 3-Axis Gimbal 4K Video 12MP 1/2.3 CMOS Sensor, up to 48mph, Gray",
+        "img": "https://149355317.v2.pressablecdn.com/wp-content/uploads/2018/09/Mavic-2-Zoom-Image-1.jpg",
+        "time": "31 Min" 
+    },
+    {
+        "name":"DJI Mavic 2 pro",
+        "price": 1649,
+        "description": "DJI Mavic 2 Pro - Drone Quadcopter UAV with Hasselblad Camera 3-Axis Gimbal HDR 4K Video Adjustable Aperture 20MP 1 CMOS Sensor, up to 48mph, Gray",
+        "img": "https://149355317.v2.pressablecdn.com/wp-content/uploads/2018/09/Mavic-2-Zoom-Image-1.jpg",
+        "time": "31 Min" 
+    },
+    {
+        "name":"DJI Phantom 4 Pro V2.0",
+        "price": 1949,
+        "description": "DJI Phantom 4 Pro V2.0 - Drone Quadcopter UAV with 20MP Camera 1 CMOS Sensor 4K H.265 Video 3-Axis Gimbal White",
+        "img": "https://149355317.v2.pressablecdn.com/wp-content/uploads/2020/04/Phantom-4-Pro-V2.0-Top-Camera-Drones.jpg",
+        "time": "30 Min" 
+    },
+    {
+        "name":"DJI Mavic Air 2",
+        "price": 449,
+        "description": " Ultralight and Foldable Drone Quadcopter, 3-Axis Gimbal with 4K Camera, 12MP Photo, 31 Mins Flight Time, OcuSync 2.0 10km HD Video Transmission, QuickShots Gray",
+        "img": "https://www1.djicdn.com/cms_uploads/support/cover/116/2db1fdf4b7b247174d9a923834d88d7d.png",
+        "time": "40 Min" 
+    }
+]
