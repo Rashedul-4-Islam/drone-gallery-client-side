@@ -6,14 +6,14 @@ import './Shop.css'
 const Shop = () => {
      const [products,setProducts] = useState([]);
      useEffect(() =>{
-        fetch('./products.json')
+        fetch('http://localhost:5000/products')
         .then(res => res.json())
         .then(data => setProducts(data))
      },[])
     return (
         <div>
             <div className="shop">
-                <h2 className="fw-bold text-light pt-5">Shop</h2>
+                <h2 className="fw-bold text-light pt-5">OUR SHOP</h2>
             </div>
             <div>
             <h1 className="fw-bold mt-5"> <span className="fs-5 font-style">Choose Your</span> <br /> Perfect Drone</h1>
@@ -34,11 +34,11 @@ const Shop = () => {
                         </Card.Text>
                         </Card.Body>
 
-                        {/* <Link to={`/tourdetails/${product._id}`}
+                        <Link to={`/purchase/${product._id}`}
                  
                         >
-                           <button className="btn btn-danger w-50 m-auto">Book Now</button> 
-                         </Link> */}
+                           <button className="btn btn-danger w-50 m-auto">Purchase Now</button> 
+                         </Link>
                         
                     </Card>
                     </Col>

@@ -6,7 +6,7 @@ import './DemoProduct.css'
 const DemoProduct = () => {
        const [demoProducts,setDemoProducts] = useState([]);
        useEffect(() =>{
-            fetch('./products.json')
+            fetch('http://localhost:5000/products')
             .then(res => res.json())
             .then(data => setDemoProducts(data))
        },[])
@@ -29,7 +29,7 @@ const DemoProduct = () => {
                         <p className="card-text fw-bold text-slice">Description :{demoProduct.description}</p>
                         <p className="card-text fw-bold">Price : $ {demoProduct.price}</p>
                         <p className="card-text fw-bold">Flight-time : {demoProduct.time}</p>
-                        <Link to={`/tourdetails/${demoProduct._id}`}
+                        <Link to={`/purchase/${demoProduct._id}`}
                         >
                             <button className="btn btn-danger w-50 m-auto">Purchase Now</button> 
                         </Link>

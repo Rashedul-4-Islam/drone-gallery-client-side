@@ -14,6 +14,8 @@ import Login from './Pages/SignIn/Login/Login';
 import Shop from './Pages/Shop/Shop';
 import DashBoard from './Pages/DashBoard/DashBoard/DashBoard';
 import PrivateRoute from './Pages/SignIn/PrivateRoute/PrivateRoute';
+import Purchase from './Pages/HomePage/Purchase/Purchase';
+import Admin from './Pages/Admin/Admin/Admin'
 
 
 function App() {
@@ -32,9 +34,15 @@ function App() {
                   <Route path="/shop">
                         <Shop></Shop>
                   </Route>
+                  <PrivateRoute path="/purchase/:id">
+                        <Purchase></Purchase>
+                   </PrivateRoute>
                   <PrivateRoute path="/dashboard">
                         <DashBoard></DashBoard>
                   </PrivateRoute>
+                  <Route path="/admin">
+                       <Admin></Admin>
+                  </Route>
                   <Route path="/register">
                        <Register></Register>
                   </Route>

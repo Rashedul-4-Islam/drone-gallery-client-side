@@ -3,7 +3,14 @@ import React from 'react';
 const Pay = () => {
     return (
         <div>
-            <h2>Payment</h2>
+            <div className="row">
+                 <div className="col-md-6">
+                 <h2 className="pt-5"> Payment system coming soon.</h2>
+                 </div>
+                 <div className="col-md-6">
+                     <img src="https://img.freepik.com/free-vector/coming-soon-banner-with-brick-wall_19426-797.jpg?size=626&ext=jpg" alt="" />
+                 </div>
+            </div>
         </div>
     );
 };

@@ -28,6 +28,9 @@ const Header = () => {
                     user.email &&  <Nav.Link as={Link} to="/dashboard">DashBoard</Nav.Link>
                 }
                 {
+                    user.email &&   <Nav.Link as={Link} to="/admin">Admin</Nav.Link>
+                }
+                {
                     user.email ?  <Link to="/login" onClick={logout} className="btn btn-warning fw-bold ms-4">Log Out</Link> :
                     <div>
                         <Link to="/register" className="btn btn-primary fw-bold mx-3">Register</Link>
