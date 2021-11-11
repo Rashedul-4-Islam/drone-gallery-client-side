@@ -16,6 +16,7 @@ import DashBoard from './Pages/DashBoard/DashBoard/DashBoard';
 import PrivateRoute from './Pages/SignIn/PrivateRoute/PrivateRoute';
 import Purchase from './Pages/HomePage/Purchase/Purchase';
 import Admin from './Pages/Admin/Admin/Admin'
+import AdminRoute from './Pages/SignIn/AdminRoute/AdminRoute';
 
 
 function App() {
@@ -40,9 +41,9 @@ function App() {
                   <PrivateRoute path="/dashboard">
                         <DashBoard></DashBoard>
                   </PrivateRoute>
-                  <Route path="/admin">
+                  <AdminRoute path="/admin">
                        <Admin></Admin>
-                  </Route>
+                  </AdminRoute>
                   <Route path="/register">
                        <Register></Register>
                   </Route>

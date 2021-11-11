@@ -15,7 +15,7 @@ const MyOrders = () => {
            .then(data => setMyOrders(data))
     },[myOrders])
     
-            const foundService = myOrders.filter(ser => ser.email === email);
+            const foundProduct = myOrders.filter(ser => ser.email === email);
          
     const handleDelete = id => {
         const url = `http://localhost:5000/myorders/${id}`;
@@ -36,13 +36,14 @@ const MyOrders = () => {
 
     return (
         <div className="mt-5">
-            <h3 className="fw-bold">My orders : {foundService.length}</h3>
+            <h3 className="fw-bold">My orders : {foundProduct.length}</h3>
             <div>
             <Row xs={1} md={3} className="g-5 mx-4 mt-3">
-                {foundService.map(service => (
+                {foundProduct.map(service => (
                    
                     <Col  key = {service._id}>
-                    <Card className="pb-3 order-card mb-3 ">
+                         <div className="order-card  mb-3">
+                         <Card className="pb-3  ">
                         <Card.Img className="order-image" variant="top" src={service.img} />
                         <Card.Body>
                         <Card.Title className="fs-3 fw-bold">{service.name}</Card.Title>
@@ -57,6 +58,7 @@ const MyOrders = () => {
                         <button onClick={() => handleDelete(service._id)} className="btn btn-danger w-50 m-auto">cancel</button> 
                         
                     </Card>
+                         </div>
                     </Col>
                 ))}
                 </Row>

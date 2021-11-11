@@ -1,6 +1,7 @@
 .order-card{
     width: 25vw;
     height: 55vh;
+    margin:10px
 }
 .order-image{
     height: 30vh;

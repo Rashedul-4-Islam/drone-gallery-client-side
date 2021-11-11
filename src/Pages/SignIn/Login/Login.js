@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { Link ,useLocation,useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import Button from 'react-bootstrap/Button'
+import { Spinner } from 'react-bootstrap';
 
 const Register = () => {
     const [loginData, setLoginData] = useState({});
-    const {loginUser,signInWithGoogle} = useAuth();
+    const {loginUser,signInWithGoogle,isLoading} = useAuth();
     const location = useLocation();
     const history = useHistory();
     console.log(loginData);
@@ -29,16 +30,23 @@ const Register = () => {
              <div className="row">
                 <div className="col-md-6 mt-5">
                 <h2 className="fw-bold">Log In Here</h2>
-                     <form onSubmit={handleLoginSubmit}>
-                         <input className="w-50 m-auto form-control" placeholder="Enter your email" type="email"  label="Your Email" name="email" onBlur={handleOnBlur}/>
-                         <br />
-                         <input className="w-50 m-auto form-control" placeholder="Enter your password" type="password"  label="Your Password" name="password" onBlur={handleOnBlur}/>
-                         <br />
-                         <input type="submit" className="btn btn-danger" value="Log In" />
-                     </form>
-                     <Link to="/register" className="text-decoration-none">You Have no Account? Register Now</Link>
-                     <br />
-                     <Button onClick={handleGoogleSignIn} className="btn btn-warning fw-bold mt-2">Log In With Google</Button>
+                    {
+                        !isLoading && <div>
+                               <form onSubmit={handleLoginSubmit}>
+                                <input className="w-50 m-auto form-control" placeholder="Enter your email" type="email"  label="Your Email" name="email" onBlur={handleOnBlur}/>
+                                <br />
+                                <input className="w-50 m-auto form-control" placeholder="Enter your password" type="password"  label="Your Password" name="password" onBlur={handleOnBlur}/>
+                                <br />
+                                <input type="submit" className="btn btn-danger" value="Log In" />
+                            </form>
+                            <Link to="/register" className="text-decoration-none">You Have no Account? Register Now</Link>
+                            <br />
+                            <Button onClick={handleGoogleSignIn} className="btn btn-warning fw-bold mt-2">Log In With Google</Button>
+                        </div>
+                    }
+                    {
+                        isLoading && <Spinner animation="border" />
+                    }
                 </div>
                 <div className="col-md-6">
                 <img className="w-50 mt-3" src="https://png.pngtree.com/png-vector/20190121/ourlarge/pngtree-log-in-login-interface-computer-computer-login-png-image_508196.jpg" alt="" />
