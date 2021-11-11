@@ -15,32 +15,6 @@ const DemoProduct = () => {
         <div>
             <h1 className="fw-bold mt-5"> <span className="fs-5 font-style">Choose Your</span> <br /> Perfect Drone</h1>
             <div>
-            {/* <Row xs={1} md={3} className="g-5 mx-4 mt-3">
-                {demoProducts.slice(0,6).map(demoProduct => (
-                   
-                    <Col  key = {demoProduct._id}>
-                    <Card className="pb-3 bg-success">
-                        <Card.Img className="drone-image p-2" variant="top" src={demoProduct.img} />
-                        <Card.Body>
-                        <Card.Title className="fs-3 fw-bold">{demoProduct.name}</Card.Title>
-                        <Card.Text className="text-slice">
-                            {demoProduct.description}
-                        </Card.Text>
-                        <Card.Text className="fw-bold">
-                           cost : ${demoProduct.price}
-                        </Card.Text>
-                        </Card.Body>
-
-                        <Link to={`/tourdetails/${demoProduct._id}`}
-                 
-                        >
-                           <button className="btn btn-danger w-50 m-auto">Purchase Now</button> 
-                         </Link>
-                        
-                    </Card>
-                    </Col>
-                ))}
-                </Row> */}
                  <Row xs={1} md={2} className="g-5 mx-4 mt-3">
                 {demoProducts.slice(0,6).map(demoProduct => (
                     <Col>

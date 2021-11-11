@@ -1,0 +1,10 @@
+.shop{
+    background-image: url(https://contrastly.com/wp-content/uploads/mavic-2-pro-12.jpg);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.drone-image{
+    height: 45vh
+}

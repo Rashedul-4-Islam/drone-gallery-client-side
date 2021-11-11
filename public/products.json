@@ -68,5 +68,19 @@
         "description": " Ultralight and Foldable Drone Quadcopter, 3-Axis Gimbal with 4K Camera, 12MP Photo, 31 Mins Flight Time, OcuSync 2.0 10km HD Video Transmission, QuickShots Gray",
         "img": "https://www1.djicdn.com/cms_uploads/support/cover/116/2db1fdf4b7b247174d9a923834d88d7d.png",
         "time": "40 Min" 
+    },
+    {
+        "name":"Hasten 720",
+        "price": 999,
+        "description": " Ultralight and Foldable Drone Quadcopter, 3-Axis Gimbal with 4K Camera, 12MP Photo, 31 Mins Flight Time, OcuSync 2.0 10km HD Video Transmission, QuickShots Gray",
+        "img": "https://5.imimg.com/data5/PY/IF/BL/SELLER-17230942/hasten-720-drone-red-wifi-hd-720p-fpv-dual-camera-position-holding-drone-500x500.jpg",
+        "time": "25 Min" 
+    },
+    {
+        "name":"Jack Royal",
+        "price": 1249,
+        "description": " Ultralight and Foldable Drone Quadcopter, 3-Axis Gimbal with 4K Camera, 12MP Photo, 31 Mins Flight Time, OcuSync 2.0 10km HD Video Transmission, QuickShots Gray",
+        "img": "https://m.media-amazon.com/images/I/61H2DlduAYL._SL1500_.jpg",
+        "time": "40 Min" 
     }
 ]

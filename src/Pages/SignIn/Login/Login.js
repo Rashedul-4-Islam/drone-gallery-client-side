@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,useLocation,useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import Button from 'react-bootstrap/Button'
 
 const Register = () => {
     const [loginData, setLoginData] = useState({});
-    const {registerUser} = useAuth();
+    const {loginUser,signInWithGoogle} = useAuth();
+    const location = useLocation();
+    const history = useHistory();
     console.log(loginData);
     const handleOnBlur = e => {
         const field = e.target.name;
@@ -14,33 +17,31 @@ const Register = () => {
         setLoginData(newLoginData);
     }
     const handleLoginSubmit = e => {
-        if (loginData.password !== loginData.password2) {
-            alert('Your password did not match');
-            return
-        }
-        registerUser(loginData.email, loginData.password, loginData.name);
+        loginUser(loginData.email, loginData.password,location,history);
         e.preventDefault();
     }
+    const handleGoogleSignIn = () => {
+        signInWithGoogle(location, history)
+    }
+
     return (
         <div>
              <div className="row">
                 <div className="col-md-6 mt-5">
-                <h2 className="fw-bold">Register Here</h2>
+                <h2 className="fw-bold">Log In Here</h2>
                      <form onSubmit={handleLoginSubmit}>
-                         <input className="w-50 m-auto form-control" placeholder="Enter your name" type="text"  label="Your Name" name="name" onBlur={handleOnBlur}/>
-                         <br />
                          <input className="w-50 m-auto form-control" placeholder="Enter your email" type="email"  label="Your Email" name="email" onBlur={handleOnBlur}/>
                          <br />
                          <input className="w-50 m-auto form-control" placeholder="Enter your password" type="password"  label="Your Password" name="password" onBlur={handleOnBlur}/>
                          <br />
-                         <input className="w-50 m-auto form-control" placeholder="Re-enter your password" type="password"  label="Your Password" name="password2" onBlur={handleOnBlur}/>
-                         <br />
-                         <input type="submit" className="btn btn-danger" value="Submit" />
+                         <input type="submit" className="btn btn-danger" value="Log In" />
                      </form>
-                     <Link to="/login" className="text-decoration-none">Already have an Account? Login</Link>
+                     <Link to="/register" className="text-decoration-none">You Have no Account? Register Now</Link>
+                     <br />
+                     <Button onClick={handleGoogleSignIn} className="btn btn-warning fw-bold mt-2">Log In With Google</Button>
                 </div>
                 <div className="col-md-6">
-                    <img className="w-75" src="https://previews.123rf.com/images/houbacze/houbacze1801/houbacze180100259/93081348-banner-register-now-illustration-design-.jpg" alt="" />
+                <img className="w-50 mt-3" src="https://png.pngtree.com/png-vector/20190121/ourlarge/pngtree-log-in-login-interface-computer-computer-login-png-image_508196.jpg" alt="" />
                 </div>
             </div>
         </div>
