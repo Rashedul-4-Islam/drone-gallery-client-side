@@ -2,3 +2,9 @@
     margin-left: -50px;
     margin-top: -5px;
 }
+
+@media only screen and (max-width: 600px) {
+   .subscribe button{
+          margin: 8px 0px;
+   }
+  }

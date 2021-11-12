@@ -9,7 +9,7 @@ const Register = () => {
     const {loginUser,signInWithGoogle,isLoading} = useAuth();
     const location = useLocation();
     const history = useHistory();
-    console.log(loginData);
+    // console.log(loginData);
     const handleOnBlur = e => {
         const field = e.target.name;
         const value = e.target.value;

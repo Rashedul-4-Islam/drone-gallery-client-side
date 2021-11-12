@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className="footers">
-            <div className="bg-dark text-light mt-1 pt-4">
+            <div style={{background:'#373833 '}} className=" text-light mt-1 pt-4">
                 <div className="row">
                     <div className="col-6 col-md-3">
                         <h3 className="text-warning fw-bold">Get In Touch</h3>
@@ -28,7 +28,7 @@ const Footer = () => {
                     <div className="col-6 col-md-3">
                         <h5>Newsletter</h5>
                         <p>Join our subscribers list to get the latest news, updates and special offers delivered directly in your inbox.</p>
-                        <div>
+                        <div className="subscribe">
                             <input className="form-control w-75 d-inline" type="text" placeholder="Enter your email"/>
                             <button className="btn btn-info footer-button fw-bold">Subscribe</button>
                         </div>

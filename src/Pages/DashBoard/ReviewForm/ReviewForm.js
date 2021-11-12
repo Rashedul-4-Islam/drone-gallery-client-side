@@ -5,10 +5,9 @@ import useAuth from '../../../hooks/useAuth'
 
 const ReviewForm = () => {
     const {user} = useAuth();
-    console.log(user);
+    // console.log(user);
     const { register, handleSubmit,reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        // console.log(data);
         fetch(`https://quiet-cove-48574.herokuapp.com/reviews`, {
             method: "POST",
             headers: {"content-type" : "application/json"},
@@ -16,7 +15,6 @@ const ReviewForm = () => {
         })
         .then((res) => res.json())
         .then((result) => {
-            // console.log(typeof(result));
             if(typeof(result) == "string"){
                 alert('Review Submitted Successfully')
                 reset();
@@ -41,7 +39,7 @@ const ReviewForm = () => {
                 {errors.exampleRequired && <span>This field is required</span>}
 
                 <br />
-                <input className="btn btn-danger mt-4" type="submit" value="send" />
+                <button className="btn btn-danger mt-4" type="submit">Send</button>
             </form>
         </div>
     );

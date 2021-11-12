@@ -19,6 +19,7 @@ import Admin from './Pages/Admin/Admin/Admin'
 import AdminRoute from './Pages/SignIn/AdminRoute/AdminRoute';
 import About from './Pages/About/About';
 import Blog from './Pages/Blog/Blog';
+import NotFound from './Pages/NotFound/NotFound';
 
 
 function App() {
@@ -57,6 +58,9 @@ function App() {
                   </Route>
                   <Route path="/login">
                        <Login></Login>
+                  </Route>
+                  <Route path="*">
+                       <NotFound></NotFound>
                   </Route>
               </Switch>
               <Footer></Footer>

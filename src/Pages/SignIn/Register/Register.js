@@ -6,7 +6,7 @@ import useAuth from '../../../hooks/useAuth';
 const Register = () => {
     const [loginData, setLoginData] = useState({});
     const {registerUser,isLoading} = useAuth();
-    console.log(loginData);
+    // console.log(loginData);
     const handleOnBlur = e => {
         const field = e.target.name;
         const value = e.target.value;

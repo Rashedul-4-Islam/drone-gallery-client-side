@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
@@ -7,28 +7,21 @@ const Header = () => {
     const {user,logout,admin} = useAuth();
     return (
         <div>
-           <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+           <Navbar collapseOnSelect expand="lg" style={{background:'#373833  '}} variant="dark">
             <Container>
-            <Navbar.Brand className="fw-bold fs-2 text-warning" href="#home">DroneX</Navbar.Brand>
+            <Navbar.Brand className="fw-bold fs-2 text-warning" href="#home"><img style={{width:'70px',color:'white'}} src="./images/quality/quality2.png" alt="" /> DroneX</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
-                <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                <Nav.Link as={Link} to="/shop">Shop</Nav.Link>
-                <Nav.Link as={Link} to="/about">About</Nav.Link>
-                <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
-                {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                </NavDropdown> */}
+                <Nav.Link as={Link} to="/home" className="fw-bold">Home</Nav.Link>
+                <Nav.Link as={Link} to="/shop" className="fw-bold">Shop</Nav.Link>
+                <Nav.Link as={Link} to="/about" className="fw-bold">About</Nav.Link>
+                <Nav.Link as={Link} to="/blog" className="fw-bold">Blog</Nav.Link>
                 </Nav>
                 <Nav>
               
                 {
-                    admin ? <Nav.Link as={Link} to="/admin">Admin</Nav.Link> : <Nav.Link as={Link} to="/dashboard">DashBoard</Nav.Link>
+                    admin ? <Nav.Link className="fw-bold" as={Link} to="/admin">Admin</Nav.Link> : <Nav.Link className="fw-bold" as={Link} to="/dashboard">DashBoard</Nav.Link>
                 }
                 {
                     user.email &&  <p className="text-light  ms-3 pt-1">{user.displayName}</p>

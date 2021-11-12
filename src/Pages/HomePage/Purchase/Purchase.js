@@ -5,7 +5,7 @@ import useAuth from '../../../hooks/useAuth';
 
 const Purchase = () => {
     const {user} = useAuth();
-    console.log(user);
+    // console.log(user);
     let {id} = useParams();
     const [details,setDetails] = useState([]);
     useEffect(() =>{

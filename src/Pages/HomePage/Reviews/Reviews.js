@@ -1,10 +1,12 @@
 import React, { useEffect, useState} from 'react';
 import {  Col, Row } from 'react-bootstrap';
 import Rating from 'react-rating';
+import useAuth from '../../../hooks/useAuth';
 import './Reviews.css'
 
 const Reviews = () => {
     const [reviews,setReviews] = useState([]);
+    const {user} = useAuth();
 
     useEffect(() =>{
         fetch('https://quiet-cove-48574.herokuapp.com/reviews')
@@ -22,24 +24,26 @@ const Reviews = () => {
            })
            .then(res => res.json())
            .then(data => {
+            // console.log(data);
                if(data.deletedCount){
                 alert("Are you delete Review?")
                 const remaining = reviews.filter(review => review._id !== id);
                 setReviews(remaining);
                }
+             
               
          });
         }
               
 
     return (
-        <div className="my-5">
+        <div id="review" className="my-5">
             <h1 className="fw-bold">Total Reviews: {reviews.length}</h1>
             <div>
             <Row xs={1} md={3} className="g-5 mx-4 mt-3">
                 {reviews.map(review => (
                     <Col key={review._id}>
-                   <div className="card mb-3 ">
+                   <div className="card mb-3 cards">
                   <div className="row g-0">
                     <div className="col-md-4 py-2 ps-2">
                     <img src={review.img} className="reviewer rounded-pill pt-5" alt="..."/>
@@ -57,7 +61,9 @@ const Reviews = () => {
                         <h4 className="card-title fw-bold">{review.name}</h4>
                         <p className="card-text">Email: {review.email}</p>
                         <p className="card-text"> {review.comment}</p>
-                        <button onClick={() => handleDelete(review._id)} className="btn btn-secondary w-25 m-auto"><span><i className="fas fa-trash-alt"></i></span></button> 
+                        {
+                            user.email === review.email &&  <button onClick={() => handleDelete(review._id)} className="btn btn-secondary w-25 m-auto"><span><i className="fas fa-trash-alt"></i></span></button> 
+                        }
                     </div>
                     </div>
                 </div>
