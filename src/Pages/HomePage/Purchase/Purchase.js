@@ -19,6 +19,7 @@ const Purchase = () => {
     const handlebooking = ExactItem =>{
           const data = ExactItem;
           data.email = `${user.email}`;
+          data.status = "pending";
         //   console.log(data);
           fetch("http://localhost:5000/myorders", {
             method: "POST",

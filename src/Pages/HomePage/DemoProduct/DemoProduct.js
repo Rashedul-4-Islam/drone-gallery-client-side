@@ -17,7 +17,7 @@ const DemoProduct = () => {
             <div>
                  <Row xs={1} md={2} className="g-5 mx-4 mt-3">
                 {demoProducts.slice(0,6).map(demoProduct => (
-                    <Col>
+                    <Col key={demoProduct._id}>
                    <div className="card mb-3 demo-product">
                   <div className="row g-0">
                     <div className="col-md-4 py-2 ps-2">

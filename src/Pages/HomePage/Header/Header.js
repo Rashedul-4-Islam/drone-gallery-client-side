@@ -29,10 +29,11 @@ const Header = () => {
                     admin ? <Nav.Link as={Link} to="/admin">Admin</Nav.Link> : <Nav.Link as={Link} to="/dashboard">DashBoard</Nav.Link>
                 }
                 {
-                    user.email &&  <p className="text-light  ms-3">{user.displayName}</p>
+                    user.email &&  <p className="text-light  ms-3 pt-1">{user.displayName}</p>
                 }
+             
                 {
-                    user.email ?  <Link to="/login" onClick={logout} className="btn btn-warning fw-bold ms-4">Log Out</Link> :
+                    user.email ?  <Link to="/login" onClick={logout} className="btn btn-warning fw-bold ms-4"><span><i className="fas fa-sign-out-alt"></i></span> Log Out</Link> :
                     <div>
                         <Link to="/register" className="btn btn-primary fw-bold mx-3">Register</Link>
                         <Link to="/login" className="btn btn-warning fw-bold">Login</Link>

@@ -1,7 +1,18 @@
 .order-card{
-    width: 25vw;
-    height: 55vh;
-    margin:10px
+    width: 20vw;
+    height: 60vh;
+    margin:10px;
+
+}
+.my-order{
+    height: 70vh;
+    overflow: scroll;
+}
+.service-name{
+    white-space: nowrap; 
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 .order-image{
     height: 30vh;

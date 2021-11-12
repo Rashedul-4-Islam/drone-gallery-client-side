@@ -29,7 +29,7 @@ const MakeAdmin = () => {
         <div>
             <h2>Make An Admin</h2>
             <form onSubmit={handleAdminSubmit}>
-            <input type="email" label="Email" onBlur={handleOnBlur} class="form-control w-25 m-auto" placeholder="Enter email"/>
+            <input type="email" label="Email" onBlur={handleOnBlur} className="form-control w-25 m-auto" placeholder="Enter email"/>
              <button type="submit" className="btn btn-primary mt-3">Make Admin</button>
             </form>
             {success && alert('Make admin Succcessfully')

@@ -37,7 +37,7 @@ const MyOrders = () => {
     return (
         <div className="mt-5">
             <h3 className="fw-bold">My orders : {foundProduct.length}</h3>
-            <div>
+            <div className="my-order">
             <Row xs={1} md={3} className="g-5 mx-4 mt-3">
                 {foundProduct.map(service => (
                    
@@ -46,12 +46,15 @@ const MyOrders = () => {
                          <Card className="pb-3  ">
                         <Card.Img className="order-image" variant="top" src={service.img} />
                         <Card.Body>
-                        <Card.Title className="fs-3 fw-bold">{service.name}</Card.Title>
+                        <Card.Title className="fs-3 fw-bold service-name">{service.name}</Card.Title>
                         {/* <Card.Text className="text-slice">
                             {service.description}
                         </Card.Text> */}
                         <Card.Text className="fw-bold">
                            Price : ${service.price}
+                        </Card.Text>
+                        <Card.Text className="fw-bold">
+                           Status : {service.status}
                         </Card.Text>
                         </Card.Body>
 
