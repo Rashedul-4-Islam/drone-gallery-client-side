@@ -17,3 +17,9 @@
 .order-image{
     height: 30vh;
 }
+
+@media only screen and (max-width: 600px) {
+    .order-card{
+        width: 70vw;
+    }
+  }

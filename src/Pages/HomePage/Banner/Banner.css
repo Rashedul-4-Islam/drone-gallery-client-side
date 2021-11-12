@@ -11,8 +11,12 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .banner-bg{
+        height: 70vh;
+    }
    .info{
        margin-top: 4rem;
+       margin-left: 5rem;
        
    }
   }

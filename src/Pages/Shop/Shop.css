@@ -5,6 +5,12 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.shop h2{
+    padding-top: 10rem;
+    font-size: 4rem;
+    color: white;
+    font-weight: 900;
+}
 .drone-image{
     height: 45vh
 }

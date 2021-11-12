@@ -1,0 +1,41 @@
+.about-banner{
+    background-image: url(https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2019/07/UAVs-help2.jpg);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-banner h2{
+    padding-top: 10rem;
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgb(228, 229, 230);
+}
+.second-section{
+    margin-left: 10rem;
+    font-family:fantasy;
+}
+.quality{
+    background-image: url(https://droneshot.com/img/portfolio/salesforce-dusk-pivot.jpg);
+    height: 60vh;
+    background-position: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+}
+.quality h1,h6{
+    color: white;
+    font-weight: bolder;
+    
+}
+.cards{
+    box-shadow: 5px 10px 10px grey;
+}
+.card-image{
+    padding-left: 5.5rem;
+}
+.all-cards{
+    margin-top: -60px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}

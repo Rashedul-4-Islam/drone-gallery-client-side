@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Table } from 'react-bootstrap';
 
 const MakeAdmin = () => {
      const [email,setEmail] = useState('');
@@ -26,14 +27,20 @@ const MakeAdmin = () => {
      }
 
     return (
-        <div>
+        <div className="my-3 row">
+            <div className="col-md-6 mt-5">
             <h2>Make An Admin</h2>
             <form onSubmit={handleAdminSubmit}>
-            <input type="email" label="Email" onBlur={handleOnBlur} className="form-control w-25 m-auto" placeholder="Enter email"/>
+            <input type="email" label="Email" onBlur={handleOnBlur} className="form-control w-50 m-auto" placeholder="Enter email"/>
              <button type="submit" className="btn btn-primary mt-3">Make Admin</button>
             </form>
-            {success && alert('Make admin Succcessfully')
+            {
+            success && alert('Make admin Succcessfully')
             }
+            </div>
+            <div className="col-md-6">
+                <img className="w-100" src="https://img.freepik.com/free-vector/man-look-graphic-chart-business-analytics-concept-big-data-processing-icon_39422-761.jpg?size=626&ext=jpg" alt="" />
+            </div>
         </div>
     );
 };

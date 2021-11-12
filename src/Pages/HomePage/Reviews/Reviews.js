@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import {  Col, Row } from 'react-bootstrap';
+import Rating from 'react-rating';
 import './Reviews.css'
 
 const Reviews = () => {
@@ -42,13 +43,21 @@ const Reviews = () => {
                   <div className="row g-0">
                     <div className="col-md-4 py-2 ps-2">
                     <img src={review.img} className="reviewer rounded-pill pt-5" alt="..."/>
+                    <div className="mt-3">
+                        <Rating
+                         initialRating={review.rating}
+                          emptySymbol="far fa-star"
+                          fullSymbol="fas fa-star"
+                          readonly
+                        ></Rating>
+                    </div>
                     </div>
                     <div className="col-md-8">
                     <div className="card-body">
                         <h4 className="card-title fw-bold">{review.name}</h4>
                         <p className="card-text">Email: {review.email}</p>
                         <p className="card-text"> {review.comment}</p>
-                        <button onClick={() => handleDelete(review._id)} className="btn btn-danger w-50 m-auto">Delete</button> 
+                        <button onClick={() => handleDelete(review._id)} className="btn btn-secondary w-25 m-auto"><span><i className="fas fa-trash-alt"></i></span></button> 
                     </div>
                     </div>
                 </div>

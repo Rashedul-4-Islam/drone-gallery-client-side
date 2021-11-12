@@ -17,6 +17,8 @@ import PrivateRoute from './Pages/SignIn/PrivateRoute/PrivateRoute';
 import Purchase from './Pages/HomePage/Purchase/Purchase';
 import Admin from './Pages/Admin/Admin/Admin'
 import AdminRoute from './Pages/SignIn/AdminRoute/AdminRoute';
+import About from './Pages/About/About';
+import Blog from './Pages/Blog/Blog';
 
 
 function App() {
@@ -34,6 +36,12 @@ function App() {
                   </Route>
                   <Route path="/shop">
                         <Shop></Shop>
+                  </Route>
+                  <Route path="/about">
+                        <About></About>
+                  </Route>
+                  <Route path="/blog">
+                        <Blog></Blog>
                   </Route>
                   <PrivateRoute path="/purchase/:id">
                         <Purchase></Purchase>

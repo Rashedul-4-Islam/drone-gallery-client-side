@@ -40,7 +40,7 @@ const DashBoard = () => {
                 </div>
                 </div>
                 <div className="my-3">
-                     <button className="btn btn-danger" onClick={logout}>Log Out</button>
+                <button className="btn btn-primary fw-bold" onClick={logout}><span><i className="fas fa-sign-out-alt"></i></span> Log Out</button>
                 </div>
                 </div>
                 <div className="col-md-9">

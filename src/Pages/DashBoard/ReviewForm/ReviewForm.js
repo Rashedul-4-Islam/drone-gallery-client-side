@@ -35,6 +35,8 @@ const ReviewForm = () => {
                 <input className="p-2 m-2 form-control w-50 m-auto" type= "url"  {...register("img")} placeholder="enter your photo" />
                 <br />
                 <input className="p-2 m-2 form-control w-50 m-auto" {...register("comment", { required: true })} placeholder="review type here" />
+                <br />
+                <input className="p-2 m-2 form-control w-50 m-auto" {...register("rating", { required: true })} placeholder="rating here 1 to 5 num" />
                 {/* errors will return when field validation fails  */}
                 {errors.exampleRequired && <span>This field is required</span>}
 

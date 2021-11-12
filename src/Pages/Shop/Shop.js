@@ -13,16 +13,16 @@ const Shop = () => {
     return (
         <div>
             <div className="shop">
-                <h2 className="fw-bold text-light pt-5">OUR SHOP</h2>
+                <h2 className="fw-bold text-light">OUR SHOP</h2>
             </div>
             <div>
             <h1 className="fw-bold mt-5"> <span className="fs-5 font-style">Choose Your</span> <br /> Perfect Drone</h1>
             <div>
-            <Row xs={1} md={3} className="g-5 mx-4 mt-3">
+            <Row xs={1} md={3} className="g-5 mx-4 my-5">
                 {products.map(product => (
                    
                     <Col  key = {product._id}>
-                    <Card className="pb-3 shop-card">
+                    <Card className="pb-3 shop-card cards">
                         <Card.Img className="drone-image" variant="top" src={product.img} />
                         <Card.Body>
                         <Card.Title className="fs-3 fw-bold">{product.name}</Card.Title>

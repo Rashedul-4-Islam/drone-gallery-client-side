@@ -33,12 +33,12 @@ const ManageProducts = () => {
             <div className="">
                 <h2 className="fw-bold text-dark pt-5">Manage Your Products</h2>
             </div>
-            <div className="mb-4">
+            <div className="mb-4 my-order">
             <Row xs={1} md={3} className="g-5 mx-4 mt-3">
                 {products.map(product => (
                    
                     <Col  key = {product._id}>
-                    <Card className="pb-3 shop-card">
+                    <Card className="pb-3 shop-card cards">
                         <Card.Img className="drone-image" variant="top" src={product.img} />
                         <Card.Body>
                         <Card.Title className="fs-3 fw-bold service-name">{product.name}</Card.Title>

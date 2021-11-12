@@ -45,15 +45,15 @@ const AllOrders = () => {
     return (
         <div className="my-5">
             <h1 className="fw-bold">All Buyer Orders: {orders.length}</h1>
-             <div>
-             <Table striped bordered hover variant="dark">
+            <div>
+            <Table  responsive striped bordered hover variant="dark">
                 <thead>
                     <tr>
                     <th>Image</th>
                     <th>Name</th>
                     <th>Email</th>
                     <th>status</th>
-                    <th>cancelation</th>
+                    <th>cancellation</th>
                     <th>Confirmation</th>
                     </tr>
                 </thead>
@@ -70,7 +70,8 @@ const AllOrders = () => {
                 ))}
                 </tbody>
                 </Table>
-             </div>
+
+            </div>
         </div>
     );
 };
