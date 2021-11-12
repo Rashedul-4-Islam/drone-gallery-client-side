@@ -9,7 +9,7 @@ const Purchase = () => {
     let {id} = useParams();
     const [details,setDetails] = useState([]);
     useEffect(() =>{
-        fetch("http://localhost:5000/products")
+        fetch("https://quiet-cove-48574.herokuapp.com/products")
         .then(res => res.json())
         .then(data => setDetails(data))
     },[])
@@ -21,11 +21,12 @@ const Purchase = () => {
           data.email = `${user.email}`;
           data.status = "pending";
         //   console.log(data);
-          fetch("http://localhost:5000/myorders", {
+          fetch("https://quiet-cove-48574.herokuapp.com/myorders", {
             method: "POST",
             headers: {"content-type" : "application/json"},
             body: JSON.stringify(data), 
         })
+        
     }
     return (
          <div className="row">

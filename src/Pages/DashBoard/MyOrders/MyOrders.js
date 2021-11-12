@@ -10,7 +10,7 @@ const MyOrders = () => {
     const email = `${user.email}`;
     // console.log(email);
     useEffect(() =>{
-           fetch('http://localhost:5000/myorders')
+           fetch('https://quiet-cove-48574.herokuapp.com/myorders')
            .then(res => res.json())
            .then(data => setMyOrders(data))
     },[myOrders])
@@ -18,7 +18,7 @@ const MyOrders = () => {
             const foundProduct = myOrders.filter(ser => ser.email === email);
          
     const handleDelete = id => {
-        const url = `http://localhost:5000/myorders/${id}`;
+        const url = `https://quiet-cove-48574.herokuapp.com/myorders/${id}`;
         fetch(url, {
             method: 'DELETE',
             headers: {"content-type" : "application/json"},

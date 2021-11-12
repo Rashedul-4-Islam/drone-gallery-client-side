@@ -6,14 +6,13 @@ const AddProducts = () => {
     const { register, handleSubmit,reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         // console.log(data);
-        fetch(`http://localhost:5000/products`, {
+        fetch(`https://quiet-cove-48574.herokuapp.com/products`, {
             method: "POST",
             headers: {"content-type" : "application/json"},
             body: JSON.stringify(data)
         })
         .then((res) => res.json())
         .then((result) => {
-            // console.log(typeof(result));
             if(typeof(result) == "string"){
                 alert('Add Product Successfully')
                 reset();

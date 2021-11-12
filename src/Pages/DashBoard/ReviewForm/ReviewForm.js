@@ -9,7 +9,7 @@ const ReviewForm = () => {
     const { register, handleSubmit,reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         // console.log(data);
-        fetch(`http://localhost:5000/reviews`, {
+        fetch(`https://quiet-cove-48574.herokuapp.com/reviews`, {
             method: "POST",
             headers: {"content-type" : "application/json"},
             body: JSON.stringify(data)

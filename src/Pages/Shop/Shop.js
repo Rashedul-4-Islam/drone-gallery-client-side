@@ -6,7 +6,7 @@ import './Shop.css'
 const Shop = () => {
      const [products,setProducts] = useState([]);
      useEffect(() =>{
-        fetch('http://localhost:5000/products')
+        fetch('https://quiet-cove-48574.herokuapp.com/products')
         .then(res => res.json())
         .then(data => setProducts(data))
      },[])
@@ -34,9 +34,7 @@ const Shop = () => {
                         </Card.Text>
                         </Card.Body>
 
-                        <Link to={`/purchase/${product._id}`}
-                 
-                        >
+                        <Link to={`/purchase/${product._id}`}>
                            <button className="btn btn-danger w-50 m-auto">Purchase Now</button> 
                          </Link>
                         

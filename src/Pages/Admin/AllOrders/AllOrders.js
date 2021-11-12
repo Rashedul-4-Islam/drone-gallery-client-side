@@ -1,13 +1,12 @@
 import React, { useEffect, useState} from 'react';
-import {  Col, Row, Table } from 'react-bootstrap';
-// import useAuth from '../../../hooks/useAuth';
+import { Table } from 'react-bootstrap';
 import './AllOrders.css'
 
 const AllOrders = () => {
     const [orders,setOrders] = useState([]);
     // const {user} = useAuth();
     useEffect(() =>{
-        fetch('http://localhost:5000/myorders')
+        fetch('https://quiet-cove-48574.herokuapp.com/myorders')
         .then(res => res.json())
         .then(data => {
             setOrders(data)
@@ -15,7 +14,7 @@ const AllOrders = () => {
     },[orders]);
 
     const handleDelete = id => {
-           const url = `http://localhost:5000/myorders/${id}`;
+           const url = `https://quiet-cove-48574.herokuapp.com/myorders/${id}`;
            fetch(url, {
                method: 'DELETE',
                headers: {"content-type" : "application/json"},
@@ -32,7 +31,7 @@ const AllOrders = () => {
         }
 
         const confirmHandler = id =>{
-            const url = `http://localhost:5000/confirmation/${id}`;
+            const url = `https://quiet-cove-48574.herokuapp.com/confirmation/${id}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {"content-type" : "application/json"},

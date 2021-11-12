@@ -7,7 +7,7 @@ const Reviews = () => {
     const [reviews,setReviews] = useState([]);
 
     useEffect(() =>{
-        fetch('http://localhost:5000/reviews')
+        fetch('https://quiet-cove-48574.herokuapp.com/reviews')
         .then(res => res.json())
         .then(data => {
             setReviews(data)
@@ -15,7 +15,7 @@ const Reviews = () => {
     },[]);
 
     const handleDelete = id => {
-           const url = `http://localhost:5000/reviews/${id}`;
+           const url = `https://quiet-cove-48574.herokuapp.com/reviews/${id}`;
            fetch(url, {
                method: 'DELETE',
                headers: {"content-type" : "application/json"},
