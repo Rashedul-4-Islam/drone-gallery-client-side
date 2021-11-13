@@ -31,6 +31,7 @@ const Purchase = () => {
     return (
          <div className="row">
              <div className="col-12 col-md-6 ">
+                 <div className="pt-5">
                  {
                      user.email && <div className="mt-5 bg-info py-5 mx-3">
                          <h2> USER INFO</h2>
@@ -39,6 +40,7 @@ const Purchase = () => {
                          <p>Email : {user.email}</p>
                      </div>
                  }
+                 </div>
              </div>
              <div className="col-12 col-md-6">
               

@@ -12,6 +12,7 @@ import Pay from '../Pay/Pay';
 import './DashBoard.css'
 import ReviewForm from '../ReviewForm/ReviewForm';
 import useAuth from '../../../hooks/useAuth';
+import DashBoardHome from '../DashBoardHome/DashBoardHome';
 
 const DashBoard = () => {
     const {logout} = useAuth();
@@ -40,9 +41,9 @@ const DashBoard = () => {
                 <div className="col-md-10">
                  
                        <Switch>
-                       {/* <Route exact path={path}>
+                       <Route exact path={path}>
                         <DashBoardHome></DashBoardHome>
-                      </Route> */}
+                      </Route>
                         <Route path={`${path}/myorders`}>
                             <MyOrders></MyOrders>
                         </Route>

@@ -1,3 +1,28 @@
 .instruction{
     background-color: lightgrey;
 }
+.animation-image{
+    width: 75%;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {margin-left: 10px;}
+    25%  {padding-top: 150px;}
+    50%  {padding-left: 100px;}
+    100% {padding-top: 30px;}
+  }
+
+  @media only screen and (max-width: 600px) {
+    .animation-image{
+        padding: 100px 0px;
+    }
+    @keyframes example {
+        0%   {margin-left: 0px;}
+        25%  {margin-right: 100px;}
+        50%  {margin-top: 0px;}
+        100% {margin-left: 0px;}
+      }
+  }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import './Header.css'
 
 const Header = () => {
     const {user,logout,admin} = useAuth();
@@ -10,7 +11,7 @@ const Header = () => {
         <div>
            <Navbar collapseOnSelect expand="lg" style={{background:'#373833  '}} variant="dark">
             <Container>
-            <Navbar.Brand className="fw-bold fs-2 text-warning" href="#home"><img style={{width:'70px',color:'white'}} src="./images/quality/quality2.png" alt="" /> DroneX</Navbar.Brand>
+            <Navbar.Brand className="fw-bold fs-2 text-warning" href="#home"><img style={{width:'70px'}} src="./images/quality/quality2.png" alt="" /> DroneX</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
@@ -21,14 +22,14 @@ const Header = () => {
                 </Nav>
                 <Nav>
                 {
-                    (user.email && !admin) &&  <Nav.Link className="fw-bold" as={Link} to="/dashboard">DashBoard</Nav.Link>
+                    (user.email && !admin) &&  <Nav.Link className="fw-bold dash-itemss" as={Link} to="/dashboard">DashBoard</Nav.Link>
                 }
               
                 {
-                    admin && <Nav.Link className="fw-bold" as={Link} to="/admin">Admin</Nav.Link> 
+                    admin && <Nav.Link className="fw-bold dash-itemss" as={Link} to="/admin">Admin</Nav.Link> 
                 }
                 {
-                    user.email &&  <p className="text-light  ms-3 pt-1">{user.displayName}</p>
+                    user.email &&  <p className="text-light  ms-3 pt-1 display-name fw-bold">{user.displayName}</p>
                 }
              
                 {

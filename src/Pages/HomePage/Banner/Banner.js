@@ -17,7 +17,7 @@ const Banner = () => {
                        </div>
                        <div className="col-12 col-md-6 mt-5">
                                 <img
-                            className="d-block w-100"
+                            className="d-block w-100 animation-image"
                             src="./images/banner/banner1.png"
                             alt="First slide"
                             />
@@ -36,7 +36,7 @@ const Banner = () => {
                        </div>
                        <div className="col-12 col-md-6 mt-5">
                                 <img
-                            className="d-block w-100"
+                            className="d-block w-100 animation-image"
                             src="./images/banner/banner2.png"
                             alt="First slide"
                             />
@@ -54,7 +54,7 @@ const Banner = () => {
                        </div>
                        <div className="col-12 col-md-6 mt-5">
                                 <img
-                            className="d-block w-100"
+                            className="d-block w-100 animation-image"
                             src="./images/banner/banner3.png"
                             alt="First slide"
                             />

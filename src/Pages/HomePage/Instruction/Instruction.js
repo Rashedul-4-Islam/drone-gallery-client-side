@@ -23,7 +23,7 @@ const Instruction = () => {
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <img className="w-75 mt-5" src="./images/banner/banner2.png" alt="" />
+                    <img className=" mt-5 animation-image" src="./images/banner/banner2.png" alt="" />
                 </div>
                 <div className="col-md-4">
                    <div className="mx-3">
