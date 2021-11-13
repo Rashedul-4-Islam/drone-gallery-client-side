@@ -8,7 +8,6 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-6 col-md-3">
                         <h3 className="text-warning fw-bold">Get In Touch</h3>
-                        {/* <p>Our travel agency is a private retailer or public service that provides travel and tourism-related services.</p> */}
                         <p><i className="fas fa-envelope me-2"></i> dronex@tech.com</p>
                         <p><i className="fas fa-phone-alt me-2"></i> +8801574832566</p>
                         <p><i className="fas fa-map-marker-alt me-2"></i> Gulshan-2,Dhaka,BD</p>
