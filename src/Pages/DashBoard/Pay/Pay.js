@@ -5,7 +5,7 @@ const Pay = () => {
         <div>
             <div className="row">
                  <div className="col-md-6">
-                 <h2 className="pt-5"> Payment system coming soon.</h2>
+                 <h2 className="pt-5 fw-bold mb-3"> Payment system <span className="text-warning">coming soon...</span></h2>
                  </div>
                  <div className="col-md-6">
                      <img className="w-100" src="https://img.freepik.com/free-vector/coming-soon-banner-with-brick-wall_19426-797.jpg?size=626&ext=jpg" alt="" />

@@ -24,7 +24,7 @@ const useFirebase = () => {
                 setUser(newUser);
                 // save user to the database
                 saveUser(email, name, 'POST');
-                // send name to firebase after creation
+                // send name to firebase
                 updateProfile(auth.currentUser, {
                     displayName: name
                 }).then(() => {

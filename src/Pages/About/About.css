@@ -39,3 +39,9 @@
     margin-bottom: 50px;
     margin-left: 50px;
 }
+
+@media only screen and (max-width: 600px) {
+    .all-cards{
+        margin-left: 30px;
+    }
+  }

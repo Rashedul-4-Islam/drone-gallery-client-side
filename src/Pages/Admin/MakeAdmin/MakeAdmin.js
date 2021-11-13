@@ -27,7 +27,7 @@ const MakeAdmin = () => {
 
     return (
         <div className="my-3 row">
-            <div className="col-md-6 mt-5">
+            <div className="col-md-6 mt-5 mb-3">
             <h2>Make An Admin</h2>
             <form onSubmit={handleAdminSubmit}>
             <input type="email" label="Email" onBlur={handleOnBlur} className="form-control w-50 m-auto" placeholder="Enter email"/>

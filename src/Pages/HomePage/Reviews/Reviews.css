@@ -3,3 +3,13 @@
     height: 150px;
     border-radius: 50%;
 }
+.review{
+    background-image: url(https://stmaaprodfwsite.blob.core.windows.net/assets/sites/1/2021/01/Drone-on-farm_254700609_F_C_AdobeStock_Photolink.jpg);
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 50px;
+
+}

@@ -5,6 +5,7 @@ import useAuth from '../../../hooks/useAuth';
 
 const Header = () => {
     const {user,logout,admin} = useAuth();
+    // console.log(admin);
     return (
         <div>
            <Navbar collapseOnSelect expand="lg" style={{background:'#373833  '}} variant="dark">
@@ -19,9 +20,12 @@ const Header = () => {
                 <Nav.Link as={Link} to="/blog" className="fw-bold">Blog</Nav.Link>
                 </Nav>
                 <Nav>
+                {
+                    (user.email && !admin) &&  <Nav.Link className="fw-bold" as={Link} to="/dashboard">DashBoard</Nav.Link>
+                }
               
                 {
-                    admin ? <Nav.Link className="fw-bold" as={Link} to="/admin">Admin</Nav.Link> : <Nav.Link className="fw-bold" as={Link} to="/dashboard">DashBoard</Nav.Link>
+                    admin && <Nav.Link className="fw-bold" as={Link} to="/admin">Admin</Nav.Link> 
                 }
                 {
                     user.email &&  <p className="text-light  ms-3 pt-1">{user.displayName}</p>
