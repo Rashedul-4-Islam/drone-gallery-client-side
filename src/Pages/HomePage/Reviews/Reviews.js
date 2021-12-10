@@ -2,6 +2,7 @@ import React, { useEffect, useState} from 'react';
 import {  Carousel, Col, Row } from 'react-bootstrap';
 import Rating from 'react-rating';
 import useAuth from '../../../hooks/useAuth';
+import Swal from 'sweetalert2';
 import './Reviews.css'
 
 const Reviews = () => {
@@ -26,7 +27,23 @@ const Reviews = () => {
            .then(data => {
             // console.log(data);
                if(data.deletedCount){
-                alert("Are you delete Review?")
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, delete it!'
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                      Swal.fire(
+                        'Deleted!',
+                        'Your Review has been deleted.',
+                        'success'
+                      )
+                    }
+                  })
                 const remaining = reviews.filter(review => review._id !== id);
                 setReviews(remaining);
                }

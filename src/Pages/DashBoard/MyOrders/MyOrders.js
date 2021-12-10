@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
+import Swal from 'sweetalert2';
 import './MyOrders.css'
 // import useAuth from '../../hooks/useAuth';
 
@@ -26,7 +27,23 @@ const MyOrders = () => {
         .then(res => res.json())
         .then(data => {
             if(data.deletedCount){
-             alert("Are you cancel Order?")
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, delete it!'
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                      Swal.fire(
+                        'Deleted!',
+                        'Your Order has been deleted.',
+                        'success'
+                      )
+                    }
+                  })
              const remaining = myOrders.filter(order => order._id !== id);
              setMyOrders(remaining);
             }

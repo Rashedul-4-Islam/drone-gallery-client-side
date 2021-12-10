@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import Swal from 'sweetalert2'
 import './AddProducts.css'
 
 const AddProducts = () => {
@@ -14,8 +15,12 @@ const AddProducts = () => {
         .then((res) => res.json())
         .then((result) => {
             if(typeof(result) == "string"){
-                alert('Add Product Successfully')
-                reset();
+                Swal.fire({
+                    icon: 'success',
+                    title: 'WoW...',
+                    text: 'Add Product Successfully',
+                    // footer: '<a href="">Why do I have this issue?</a>'
+                  })
             }
         })
     };

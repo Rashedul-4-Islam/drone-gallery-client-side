@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Spinner } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import useAuth from '../../../hooks/useAuth';
 
 const Register = () => {
@@ -16,7 +17,12 @@ const Register = () => {
     }
     const handleLoginSubmit = e => {
         if (loginData.password !== loginData.password2) {
-            alert('Your password did not match');
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Your Password did not match',
+                footer: '<a href="">Why do I have this issue?</a>'
+              })
             return
         }
         registerUser(loginData.email, loginData.password, loginData.name);
