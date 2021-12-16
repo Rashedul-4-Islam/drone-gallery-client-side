@@ -22,7 +22,8 @@ const Shop = () => {
                 {products.map(product => (
                    
                     <Col  key = {product._id}>
-                    <Card className="pb-3 shop-card cards">
+                    <Card className="pb-3 shop-card cards" data-aos="zoom-in"
+                    data-aos-duration="1000">
                         <Card.Img className="drone-image" variant="top" src={product.img} />
                         <Card.Body>
                         <Card.Title className="fs-3 fw-bold">{product.name}</Card.Title>

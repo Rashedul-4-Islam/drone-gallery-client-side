@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
 import './DemoProduct.css'
 
 const DemoProduct = () => {
@@ -18,7 +19,8 @@ const DemoProduct = () => {
                  <Row xs={1} md={2} className="g-5 mx-4 mt-3">
                 {demoProducts.slice(0,6).map(demoProduct => (
                     <Col key={demoProduct._id}>
-                   <div className="card mb-3 demo-product cards">
+                   <div className="card mb-3 demo-product cards" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
                   <div className="row g-0">
                     <div className="col-md-4 py-2 ps-2">
                     <img src={demoProduct.img} className="image-size w-100" alt="..."/>

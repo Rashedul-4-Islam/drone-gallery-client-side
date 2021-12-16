@@ -8,8 +8,8 @@ const Header = () => {
     const {user,logout,admin} = useAuth();
     // console.log(admin);
     return (
-        <div>
-           <Navbar collapseOnSelect expand="lg" style={{background:'#373833  '}} variant="dark">
+        <div className='header-nav'>
+           <Navbar collapseOnSelect expand="lg" className='brand-nav' variant="dark">
             <Container>
             <Navbar.Brand className="fw-bold fs-2 text-warning" href="#home"><img style={{width:'70px'}} src="./images/quality/quality2.png" alt="" /> DroneX</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

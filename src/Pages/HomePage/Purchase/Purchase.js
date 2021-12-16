@@ -33,11 +33,15 @@ const Purchase = () => {
              <div className="col-12 col-md-6 ">
                  <div className="pt-5">
                  {
-                     user.email && <div className="mt-5 bg-info py-5 mx-3">
-                         <h2> USER INFO</h2>
+                     user.email && <div style={{background:'#3d0923'}} className="mt-5 py-5 mx-3">
+                         <h2 className="text-light"> USER INFO</h2>
                          <img className="w-25 rounded-pill" src={user.photoURL} alt="" />
-                         <h3>Name : {user.displayName}</h3>
-                         <p>Email : {user.email}</p>
+                         <input type="text" className='form-control w-50 m-auto' placeholder={user.displayName}/>
+                         <input type="text" className='form-control w-50 m-auto mt-2' placeholder={user.email}/>
+                         <input type="text" className='form-control w-50 m-auto mt-2' placeholder='phone number'/>
+                         <input type="text" className='form-control w-50 m-auto mt-2' placeholder='address'/>
+                         {/* <h3>Name : {user.displayName}</h3>
+                         <p>Email : {user.email}</p> */}
                      </div>
                  }
                  </div>

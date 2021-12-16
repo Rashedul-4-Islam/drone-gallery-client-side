@@ -4,8 +4,8 @@ import './Banner.css';
 
 const Banner = () => {
     return (
-        <div>
-            <Carousel variant="dark">
+        <div className='header-nav'>
+            <Carousel variant="dark"  className='header-nav'>
             <Carousel.Item>
                 <div className="row banner-bg">
                        <div className="col-12 col-md-6">

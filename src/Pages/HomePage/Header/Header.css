@@ -1,6 +1,12 @@
+.header-nav{
+    width: 100%;
+}
 .dash-itemss{
     margin-top: 3px;
 }
 .display-name{
     margin-top: 5px;
+}
+.brand-nav{
+    background-color: #3d0923;
 }

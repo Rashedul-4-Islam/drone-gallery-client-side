@@ -20,6 +20,9 @@ import AdminRoute from './Pages/SignIn/AdminRoute/AdminRoute';
 import About from './Pages/About/About';
 import Blog from './Pages/Blog/Blog';
 import NotFound from './Pages/NotFound/NotFound';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 
 function App() {
