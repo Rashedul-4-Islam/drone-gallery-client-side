@@ -1,3 +1,6 @@
+.demo_products{
+    width:100vw;
+}
 .font-style{
     font-family: cursive;
     color: blueviolet;
@@ -22,6 +25,9 @@
 
 
 @media only screen and (max-width: 600px) {
+    .demo_products{
+        width:100vw;
+    }
    .text-slice{
        width: 200px;
    }

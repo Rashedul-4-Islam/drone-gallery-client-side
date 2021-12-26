@@ -1,5 +1,6 @@
 .instruction{
     background-color: lightgrey;
+    width: 100%;
 }
 .animation-image{
     width: 75%;
