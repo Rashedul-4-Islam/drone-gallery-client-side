@@ -1,6 +1,6 @@
-/* .footers{
-    width: 100vw;
-} */
+.footers{
+    overflow: hidden;
+}
 .footer-button{
     margin-left: -50px;
     margin-top: -5px;

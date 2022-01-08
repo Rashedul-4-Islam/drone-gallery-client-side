@@ -4,10 +4,12 @@ import './About.css'
 
 const About = () => {
     return (
-        <div>
-            <div className="about-banner">
+        <div className='container-fluid'>
+             <div className="row">
+             <div className="about-banner">
                 <h2>About</h2>
             </div>
+             </div>
             <div className="row my-4">
                 <div className="col-md-6">
                     <img className="w-50 mt-5" src="https://gridvalley.net/wp/dronza/wp-content/uploads/2020/12/Untitled-1.png" alt="" />

@@ -93,8 +93,9 @@ const Reviews = () => {
 
     return (
         <div className="my-5 review">
-            <h1 className="fw-bold text-light bg-dark w-25 m-auto rounded-pill mb-3 text-center">Reviews: {reviews.length}</h1>
-            <Slider {...settings}>
+            <h1 className="fw-bold text-light bg-dark text-center m-auto rounded-pill mb-3 reviews_bg">Reviews: {reviews.length}</h1>
+          <div className='checkSlider'>
+          <Slider {...settings}>
             {reviews.map(review => (
                     <Col key={review._id}>
                    <div className="card mb-3 mx-3 cards">
@@ -125,6 +126,7 @@ const Reviews = () => {
                     </Col>
                 ))}
             </Slider>
+          </div>
         </div>
     );
 };

@@ -3,7 +3,7 @@ import './Instruction.css'
 
 const Instruction = () => {
     return (
-        <div className="instruction my-3">
+        <div className="instruction my-3 container-fluid">
             <h1 className="fw-bold mt-5 w-25 m-auto text-center"> <span className="fs-5 font-style text-danger">You will love it</span> <br /> How It Works</h1>
             <div className="row mt-5">
                 <div className="col-md-4">
@@ -26,7 +26,7 @@ const Instruction = () => {
                     <img className=" mt-5 animation-image" src="./images/banner/banner2.png" alt="" />
                 </div>
                 <div className="col-md-4">
-                   <div className="mx-3">
+                   <div className="px-3">
                    <div className="text-start">
                         <h2 className="fw-bold">How To Use Battery</h2>
                         <p>The intelligent flight batteries with the highest power level will be charged first. During the charging the status LED will blink green slowly. When the status LED indicator is solid green all the batteries are fully charged. Remove the batteries from the charging hub and the charging is complete.</p>

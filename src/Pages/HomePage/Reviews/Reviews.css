@@ -17,6 +17,9 @@
 .reviews_bg{
     width: 25%;
 }
+.checkSlider{
+    width: 95%;
+}
 
 @media only screen and (max-width: 600px){
     .reviews_bg{
