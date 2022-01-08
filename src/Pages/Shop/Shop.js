@@ -13,12 +13,12 @@ const Shop = () => {
     return (
         <div>
             <div className="shop">
-                <h2 className="fw-bold text-light">OUR SHOP</h2>
+                <h2 className="fw-bold text-light text-center">OUR SHOP</h2>
             </div>
             <div>
-            <h1 className="fw-bold mt-5"> <span className="fs-5 font-style">Choose Your</span> <br /> Perfect Drone</h1>
+            <h1 className="fw-bold mt-5 text-center"> <span className="fs-5 font-style">Choose Your</span> <br /> Perfect Drone</h1>
             <div>
-            <Row xs={1} md={3} className="g-5 mx-4 my-5">
+            <Row xs={1} md={3} className="g-5 mx-4 my-5 text-center">
                 {products.map(product => (
                    
                     <Col  key = {product._id}>
