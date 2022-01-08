@@ -18,7 +18,7 @@ const DashBoard = () => {
     const {logout} = useAuth();
     let { path, url } = useRouteMatch();
     return (
-        <div>
+        <div className='container-fluid'>
             <div className="row">
                 <div className="col-md-2 pt-3 dashboard">
                 <div className="">

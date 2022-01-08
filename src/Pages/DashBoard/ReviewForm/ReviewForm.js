@@ -23,8 +23,8 @@ const ReviewForm = () => {
     };
     return (
         <div className="bg-dark text-light my-5 py-3 add-tour m-auto">
-            <h2 className="mt-5">Review</h2>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <h2 className="mt-5 text-center">Review</h2>
+            <form onSubmit={handleSubmit(onSubmit)} className='text-center'>
 
                 <input className="p-2 m-2 form-control w-50 m-auto" defaultValue={user.displayName} {...register("name")}  />
                 <br />

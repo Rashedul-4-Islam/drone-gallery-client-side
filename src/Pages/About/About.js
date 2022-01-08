@@ -28,10 +28,12 @@ const About = () => {
                 </div>
             </div>
             <div>
-                <div className="quality">
+                 <div className="row">
+                 <div className="quality">
                     <h6>About Quality</h6>
                     <h1>We're about Quality and Trust.</h1>
                 </div>
+                 </div>
                 <div className="row all-cards">
                        <div className="col-md-4 pb-3">
                        <Card className="cards" style={{ width: '18rem' }}>
