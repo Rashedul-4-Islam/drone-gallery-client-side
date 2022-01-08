@@ -14,7 +14,7 @@ const DemoProduct = () => {
 
     return (
         <div className='demo_products'>
-            <h1 className="fw-bold mt-5"> <span className="fs-5 font-style">Choose Your</span> <br /> Favourite Drone</h1>
+            <h1 className="fw-bold mt-5 w-25 m-auto text-center"> <span className="fs-5 font-style">Choose Your</span> <br /> Favourite Drone</h1>
             <div>
                  <Row xs={1} md={2} className="g-5 mx-4 mt-3">
                 {demoProducts.slice(0,6).map(demoProduct => (

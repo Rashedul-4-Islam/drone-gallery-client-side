@@ -1,5 +1,5 @@
 .demo_products{
-    width:100vw;
+    width:100%;
 }
 .font-style{
     font-family: cursive;
@@ -26,7 +26,7 @@
 
 @media only screen and (max-width: 600px) {
     .demo_products{
-        width:100vw;
+        width:100%;
     }
    .text-slice{
        width: 200px;

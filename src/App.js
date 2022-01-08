@@ -22,6 +22,7 @@ import Blog from './Pages/Blog/Blog';
 import NotFound from './Pages/NotFound/NotFound';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Cart from './Pages/HomePage/Cart/Cart';
 AOS.init();
 
 
@@ -52,6 +53,9 @@ function App() {
                    </PrivateRoute>
                   <PrivateRoute path="/dashboard">
                         <DashBoard></DashBoard>
+                  </PrivateRoute>
+                  <PrivateRoute path="/cart">
+                        <Cart/>
                   </PrivateRoute>
                   <AdminRoute path="/admin">
                        <Admin></Admin>

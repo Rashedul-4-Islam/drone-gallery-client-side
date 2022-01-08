@@ -4,7 +4,7 @@ import './Instruction.css'
 const Instruction = () => {
     return (
         <div className="instruction my-3">
-            <h1 className="fw-bold mt-5"> <span className="fs-5 font-style text-danger">You will love it</span> <br /> How It Works</h1>
+            <h1 className="fw-bold mt-5 w-25 m-auto text-center"> <span className="fs-5 font-style text-danger">You will love it</span> <br /> How It Works</h1>
             <div className="row mt-5">
                 <div className="col-md-4">
                     <div className="ps-4">

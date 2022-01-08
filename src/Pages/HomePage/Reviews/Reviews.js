@@ -93,7 +93,7 @@ const Reviews = () => {
 
     return (
         <div className="my-5 review">
-            <h1 className="fw-bold text-light bg-dark m-auto rounded-pill mb-3 reviews_bg">Reviews: {reviews.length}</h1>
+            <h1 className="fw-bold text-light bg-dark w-25 m-auto rounded-pill mb-3 text-center">Reviews: {reviews.length}</h1>
             <Slider {...settings}>
             {reviews.map(review => (
                     <Col key={review._id}>

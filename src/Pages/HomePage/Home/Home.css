@@ -1,10 +1,11 @@
-/* .homes{
+ .homes{
     width: 100%;
+    background-color: blanchedalmond;
     
 }
 
 @media only screen and (max-width: 600px) {
      .homes{
-        width:35%;
+        width:100%;
      }
-  } */
+  } 

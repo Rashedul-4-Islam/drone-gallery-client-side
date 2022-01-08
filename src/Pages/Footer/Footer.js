@@ -42,7 +42,7 @@ const Footer = () => {
                         <p><i className="fab fa-twitter me-3"></i></p>
                     </div>
                 </div>
-                <div className="row mt-4">
+                <div className="row mt-4 text-center">
                     <p>Copyright <span>&copy;</span> 2021 DroneX. Developed By Rashedul Islam</p>
                 </div>
             </div>

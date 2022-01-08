@@ -1,6 +1,6 @@
 .blog{
     background-image: url(https://roam.qodeinteractive.com/wp-content/uploads/2017/08/blog-title-img-1.jpg);
-    width: 100vw;
+    /* width: 100vw; */
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;

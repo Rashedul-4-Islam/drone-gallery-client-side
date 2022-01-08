@@ -24,7 +24,7 @@ const Header = () => {
                 {
                     (user.email && !admin) &&  <div className='d-flex'>
                         <Nav.Link className="fw-bold dash-itemss" as={Link} to="/dashboard">DashBoard</Nav.Link>
-                        <Nav.Link className="btn shadow-none position-relative py-1 px-1 my-2 my-md-0 dash-itemss" as={Link} to="/"><i className="fas fa-shopping-cart text-light h3 m-0"></i>
+                        <Nav.Link className="btn shadow-none position-relative py-1 px-1 my-2 my-md-0 dash-itemss" as={Link} to="/cart"><i className="fas fa-shopping-cart text-light h3 m-0"></i>
                          <div className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-flex align-items-center justify-content-center">
                               <small>0</small>
                          </div>
