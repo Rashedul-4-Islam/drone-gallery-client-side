@@ -46,4 +46,11 @@
     .all-cards{
         margin-left: 30px;
     }
+    .about-banner h2{
+        padding-top: 10rem;
+        font-size: 4rem;
+        padding-left: 7rem;
+        font-weight: bold;
+        color: rgb(228, 229, 230);
+    }
   }

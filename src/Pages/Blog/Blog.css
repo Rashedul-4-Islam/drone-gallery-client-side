@@ -13,3 +13,13 @@
     color: white;
     font-weight: 900;
 }
+
+@media only screen and (max-width: 600px){
+    .blog h3{
+        padding-top: 10rem;
+        padding-left: 7rem;
+        font-size: 4rem;
+        color: white;
+        font-weight: 900;
+    }
+}
