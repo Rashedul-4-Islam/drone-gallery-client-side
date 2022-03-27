@@ -26,9 +26,9 @@ const Register = () => {
     }
 
     return (
-        <div>
+        <div className='container-fluid'>
              <div className="row">
-                <div className="col-md-6 mt-5">
+                <div className="col-md-6 mt-5 text-center">
                 <h2 className="fw-bold">Log In Here</h2>
                     {
                         !isLoading && <div>
