@@ -9,7 +9,7 @@ const Banner = () => {
             <Carousel.Item>
                 <div className="row banner-bg">
                        <div className="col-12 col-md-6">
-                       <div className="text-light info text-start w-75">
+                       <div className="text-light info text-start w-75 pt-5  ps-xxl-5  ps-1">
                         <h5 className="fw-bold">Capturing Moments</h5>
                         <h1 className="text-danger fw-bold">FROM EVERY ANGELS</h1>
                         <p>Drones do more than improve communication and help keep projects on track.</p>
@@ -28,9 +28,9 @@ const Banner = () => {
             <Carousel.Item>
             <div className="row banner-bg">
                        <div className="col-12 col-md-6">
-                       <div className="text-light info text-start w-75">
+                       <div className="text-light info text-start pt-5 ps-xxl-5  ps-1 w-75">
                         <h5 className="fw-bold">Gives You the </h5>
-                        <h1 className="text-danger fw-bold">VISIBLE DIFFERENCE</h1>
+                        <h1 className="text-danger fw-bold fs-1">VISIBLE DIFFERENCE</h1>
                         <p>Drones provide construction teams with an overhead view of jobsites, materials, machinery and people.</p>
                         </div>
                        </div>
@@ -46,7 +46,7 @@ const Banner = () => {
             <Carousel.Item>
             <div className="row banner-bg">
                        <div className="col-12 col-md-6">
-                       <div className="text-light info text-start w-75">
+                       <div className="text-light info text-start pt-5 ps-xxl-5  ps-1 w-75">
                         <h5 className="fw-bold">We Capture the</h5>
                         <h1 className="text-danger fw-bold">PRECIOUS MOMENTS</h1>
                         <p>Drones do more than improve communication and help keep projects on track.</p>

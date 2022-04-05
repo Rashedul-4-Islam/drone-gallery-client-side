@@ -6,12 +6,12 @@ const Blog = () => {
         <div className="mb-4 container-fluid">
              <div className="row">
                 <div className="blog">
-                    <h3>Blog</h3>
+                    <h3 className='text-center'>Blog</h3>
                 </div>
              </div>
             <div className="row">
             <div className="col-md-6">
-                <div className='ps-5'>
+                <div className='ms-5 ps-5'>
                 <p className=" mt-5 text-danger">December 12, 2020</p>
                 <img className="w-75 mb-3 " src="https://media-rd.s3.amazonaws.com/featured_image/2017/10/rd1710_drone.jpg" alt="" />
                 </div>
@@ -25,7 +25,7 @@ const Blog = () => {
             </Accordion>
             </div>
             <div className="col-md-6">
-              <div className='ps-5'>
+              <div className='ms-5 ps-5'>
               <p className=" mt-5 text-danger">June 12, 2021</p>
              <img className="w-75  mb-3" src="https://cdn.pixabay.com/photo/2018/05/21/22/34/drone-3419851_960_720.jpg" alt="" />
               </div>
